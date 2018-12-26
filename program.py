@@ -13,8 +13,7 @@ def set_user_zipcode():
 
 
 def get_html(zip_code):
-    url = 'https://www.wunderground.com/weather/us/ma/brimfield/{}'.format(
-        zip_code)
+    url = 'https://www.wunderground.com/weather/us/ma/brimfield/{}'.format(zip_code)
     response = requests.get(url)
     return response
 
